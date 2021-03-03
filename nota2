@@ -1,0 +1,14 @@
+Model reprenta a tabela, estrutura de dados que 
+representa uma tabla
+
+Exemplo
+
+tabela
+
+Pergunta
+--------
+title
+description
+
+ao criar vai diretamente no banco de dados.
+Um boa pratica e comecar com letra maiusculas um MODEL

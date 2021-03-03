@@ -1,0 +1,47 @@
+EJS - Motor de template(desenha html)
+
+views - nome obrigatorio(todos arquivos html devem ficar nessa pasta)
+
+
+  <%= nomeDaVariavel %> --- exibir valores de variaveis
+Usar direitamente no html
+<p>Nome: <%= nome %></p>   
+<p>Linguagem Favorita: <%= lang %></p> 
+
+Condicao com EJS
+<% if (msg == true) { %>
+  <h3>Mensagem de erro</h3>
+<%}%>
+
+<% if (msg == true) { %>
+  <h3>Mensagem de erro</h3>
+<%} else {%>
+  <h3>Nenhum erro</h3>
+<%}%>
+
+
+Repeticao
+no arvuivo index
+  var produtos = [
+        {nome: "Bolinho",preco: 100},
+        {nome: "Coca-Cola", preco: 50},
+        {nome:"Cerveja", preco: 150}
+    ]
+
+    no html
+
+ <% produtos.forEach(function(produto) { %>
+    <hr>
+    <h4><%= produto.nome %></h4>
+    <h5><%= produto.preco %></h5> 
+  <% }) %>  
+
+
+Arquivos Estaticos(CSS, JS FrontEnd, Imagens)
+
+
+
+Exemplo de aplicacao em uma pagina real.
+Exe:
+Se tivermos uma pagina existem botoes, que so aparecem pra adm, e pra usuarios comuns.
+Poderia controlar, qual exibir de maneira controlada
